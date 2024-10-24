@@ -8,10 +8,12 @@ const usersArray =[
 	{ id: 4, firstName: "Bob", lastName: "Brown", role: "user" },
 	{ id: 5, firstName: "Charlie", lastName: "Davis", role: "admin" },
 ]
+    
+
 router.get("/users", (req, res) => {
-    res.json({
-        msg: "Ceci est un test depuis le routeur",
-    })
+    res.json(usersArray)
+
+    
 })
 
 module.exports = router
